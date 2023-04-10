@@ -3,3 +3,16 @@ main {
   vertical-align: center;
   line-height: 100vh
 }
+.straweberry {
+  width: 300px;
+  text-align: center;
+  padding: 1rem;
+  background-color: #f5c0bc;
+  border-radius: 20px;
+  box-shadow:7px 5px 23px -9px rgba(0,0,0,75);
+}
+.photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}

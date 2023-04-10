@@ -1,6 +1,6 @@
 import './App.css'
 
-export default function App() {
+export default function AppJSX() {
   const name = 'chocolate';
   const list = ['Melon', 'Mango', 'Apple']
   return (
