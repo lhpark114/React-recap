@@ -2,15 +2,21 @@ import './App.css'
 
 export default function App() {
   const name = 'chocolate';
+  const list = ['Melon', 'Mango', 'Apple']
   return (
     <>
-    <h1 className='pink'>Hello!</h1>
+    <h1 className='pink'>Hello! {`HAHAHA! ${name}`}</h1>
       <h2>Bye!00</h2>
       <p>{name}</p>
       <ul>
         <li>Chocolate</li>
         <li>Strawberry</li>
         <li>Banana</li>
+      </ul>
+      <ul>
+        {list.map((item) => (
+        <li>{item}</li>
+    ))}
       </ul>
       <img 
         style={{width: '200px', height: '200px'}}
