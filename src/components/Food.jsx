@@ -1,13 +1,13 @@
-export default function Food() {
+export default function Food({image, name, price}) {
   return (
     <div className='straweberry'>
       <img
         className='photo'
-        src='https://sakura.co/wp-content/uploads/2022/12/sakuraco_white-strawberry-thumbnail.png'
-        alt='WhiteStrawberry'
+        src={image}
+        alt='food'
         />
-      <h1>Strawberry</h1>
-      <p>White</p>
+      <h1>{name}</h1>
+      <p>{price}</p>
     </div>
   )
 }
