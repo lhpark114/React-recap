@@ -3,7 +3,7 @@ main {
   vertical-align: center;
   line-height: 100vh
 }
-.straweberry {
+.strawberry {
   width: 300px;
   text-align: center;
   padding: 1rem;
@@ -15,4 +15,19 @@ main {
   width: 200px;
   height: 200px;
   border-radius: 100%;
+}
+.foodpic {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+.sale {
+  position: absolute;
+  left: 70%;
+  top: 10%;
+  background-color: aquamarine;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
 }
