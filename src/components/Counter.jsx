@@ -5,8 +5,7 @@ export default function Counter({total, onClick}) {
   
   return (
     <div className='counter'>
-      <p className='count'>
-        {count}
+      <p className='count'> {count}
         <span className='total'>/{total}</span>
       </p>
       

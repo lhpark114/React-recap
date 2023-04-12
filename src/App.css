@@ -38,7 +38,9 @@ main {
 
 
 
-
+.count {
+  font-size: 7rem;
+}
 .counter {
   display: flex;
   flex-direction: column;
@@ -73,4 +75,8 @@ main {
   font-size: 2rem;
   background: rgb(225, 200, 238);
   font-weight: bold;
+}
+.total {
+  font-size: 1rem;
+  margin-left: -1.5rem;
 }
