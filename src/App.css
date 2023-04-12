@@ -1,3 +1,7 @@
+.total {
+  font-size: 1rem;
+  margin-left: -1.5rem;
+}
 main {
   text-align: center;
   vertical-align: center;
@@ -33,10 +37,7 @@ main {
 }
 
 
-.container {
-  display: flex;
-  justify-content: center;
-}
+
 
 .counter {
   display: flex;
@@ -61,4 +62,15 @@ main {
   border-radius: 0.5rem;
   cursor: pointer;
   background: rgb(225, 200, 238);
+}
+.container {
+  width: 500px;
+  margin: auto;
+}
+.banner {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 2rem;
+  background: rgb(225, 200, 238);
+  font-weight: bold;
 }
