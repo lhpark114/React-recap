@@ -7,11 +7,14 @@ export default function AppXY() {
   return (
     <div className='container'
       onPointerMove={(e)=>{
-        console.log(e.clientX, e.clientY);
-        setPosition({x:e.clientX, y:e.clientY});
-        // 만약 수평으로만 이동이 가능하도록 하려면?
+        //console.log(e.clientX, e.clientY);
+        //setPosition({x:e.clientX, y:e.clientY});
+        // 만약 수평으로만 이동이 가능하도록 하려면? - y유지, x만 업데이트
+        setPosition((prev)=>({x:e.clientX, y:prev.y}));
       }}>
-      <div className='pointer' style={{transform: `translate(${position.x}px, ${position.y}px)`}}/>
+      <div 
+        className='pointer' 
+        style={{transform: `translate(${position.x}px, ${position.y}px)`}}/>
     </div>
   );
 }
