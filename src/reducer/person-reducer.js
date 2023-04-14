@@ -1,7 +1,7 @@
 
 export default function personReducer(person, action) {
   switch(action.type) {
-    case'updated': {
+    case 'updated': {
       const {prev, current} = action;
       return {
         ...person,
@@ -18,7 +18,8 @@ export default function personReducer(person, action) {
         };
   }
   case 'deleted': {
-    return : {
+    const {name} = action;
+    return {
           ...person,
           mentors: person.mentors.filter((mentor) => 
             mentor.name !== name),
@@ -28,3 +29,4 @@ export default function personReducer(person, action) {
     throw Error(`알수없는 액션 타입 : ${action.type}`);
   }
   }
+}
