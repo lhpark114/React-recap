@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import AppMentors from './AppMentors'
+import AppForm from './AppForm'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
-		<AppMentors />
+		<AppForm />
 	</React.StrictMode>
 )
