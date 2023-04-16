@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import AppTheme from './AppTheme'
+import AppMentorsButton from './AppMentorsButton'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
-		<AppTheme />
+		<AppMentorsButton />
 	</React.StrictMode>
 )
