@@ -3,18 +3,21 @@ import React from 'react';
 export default function AppWrap() {
  return (
    <div>
-    <Navbar />
+    <Navbar>
+      <Avatar image='https://sakura.co/wp-content/uploads/2022/12/sakuraco_white-strawberry-thumbnail.png'
+        name='Strawberry'
+        size={200}/>
+      <p> Hello </p>
+    </Navbar>
    </div>
  );
 }
 
 
-function Navbar() {
+function Navbar({children}) {
   return(
     <header style = {{ backgroundColor: 'yellow'}}>
-      <Avatar image='https://sakura.co/wp-content/uploads/2022/12/sakuraco_white-strawberry-thumbnail.png'
-        name='Strawberry'
-        size={200}/>
+      {children}
     </header>
   );
 }
