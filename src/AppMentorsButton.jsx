@@ -1,4 +1,4 @@
-import React, {useReducer, useMemo, useCallback} from 'react';
+import React, {useReducer, useMemo, useCallback, memo} from 'react';
 import personReducer from './reducer/person-reducer';
 import './AppXY.css'
 
@@ -43,7 +43,7 @@ export default function AppMentors() {
   );
 }
 
-function Button({ text, onClick}) {
+const Button = memo(({ text, onClick}) => {
   console.log('Button', text, 're-rendering');
   const result = useMemo(() => calculateSomething(),[text])
   return (
@@ -59,7 +59,7 @@ function Button({ text, onClick}) {
       {`${text} ${result}`}
     </button>
   );
-}
+});
 
 function calculateSomething() {
   for (let i = 0; i < 10000; i++) {
